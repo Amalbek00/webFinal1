@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    background-color:#060509;
+}
+
+body{
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo{
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+header #logo span{
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+@media (min-width: 701px){
+    #logo{
+        float: left;
+        width: 30%;
+        font-size: 1.1em;
+    }
+
+    #about{
+        float: right;
+        width: 67%;
+    }
+}
+
+@media (max-width: 700px){
+    #logo{
+        margin-top: 15px;
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    #about{
+        float: left;
+        width: 100%;
+    }
+}
+
+#about{
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#about > a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#about > a:hover {
+    color: #F4A460;
+    transition: color .1s linear;
+}
+
+#about > a:not(:last-child){
+    margin-right: 7%;
+}
+
+.fixed{
+    z-index: 6000;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo{
+    color: #343434;
+}
+
+.fixed #about a{
+    color: #343434;
+}
+
+.fixed #about a:hover{
+    color: #7c7c7c;
+}
+
+#top{
+    width: 100%;
+    height: 1000px;
+    background-attachment: fixed;
+    background-image: url(https://www.mercedes-benz.com/en/design/vehicles/_jcr_content/root/slider_0/sliderchilditems/slideritem_0/image/MQ7-0-image-20190523155835/01-mercedes-benz-design-cls-coupe-c-257-sketch-3400x1440.jpeg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+}
+
+@media (min-width: 1001px){
+    #top{
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 650px){
+    #top{
+        font-size: 1em;
+        padding-top: 50%;
+    }
+}
+
+@media (max-width: 1000px) and(min-width: 651px){
+    #top{
+        font-size: 2em;
+    }
+}
+
+#top h1{
+    font-family: 'Cinzel', serif;
+    padding-top: 5%;
+}
+
+#top h3{
+    color: #D3D3D3;
+}
+
+#main{
+    padding: 100px 20%;
+    width: 60%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size: 1.3em;
+}
+
+@media (min-width: 1401px){
+    #main{
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 1400px){
+    #main{
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media(max-width: 700px){
+    #main div{
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#main div{
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#main h2{
+    font-size: 3em;
+}
+
+#main span{
+    color: #a0a0a0;
+}
+
+#overview{
+    float: left;
+    background-image: url(https://www.mercedes-benz.com/en/design/_jcr_content/root/slider_0_copy/sliderchilditems/slideritem_0/image/MQ7-0-image-20190523142249/01-mercedes-benz-design-uebersicht-3400x1440.jpeg);
+    background-blend-mode: multiply;
+    background-color: #4f1c75;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 100px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+#overview h2{
+    font-size: 4em;
+}
+
+#overview h4{
+    color: #ccc;
+    font-size: 1.5em;
+}
+
+#overview .img{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+#overview .img:nth-child(odd){
+    margin-left: 18%;
+}
+
+#overview img{
+    background: #fafafa;
+    padding: 5px;
+    border: 2px solid silver;
+    float: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+#overview a{
+    color: #F8F8FF;
+}
+
+#overview span{
+    float: left;
+    width: 100%;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+@media(max-width: 700px){
+    #overview .img{
+        width: 80%!important;
+        margin-right: 0!important;
+        margin-left: 10%!important;
+    }
+}
+
+#contacts{
+    width: 100%;
+    float: left;
+    padding-bottom: 40px;
+    padding-top: 70px;
+    border-top: 4px solid #ccc;
+    background: #f4f4f4;
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: lighter;
+}
+
+#contacts h5{
+    font-size: 3em;
+    color: #4f4f4f;
+}
+
+#news{
+    float: left;
+    background-image: url(https://www.mercedes-benz.com/en/classic/museum/enjoy-the-diversity-of-automotive-culture/_jcr_content/root/paragraph/paragraph-right/paragraphimage/image/MQ6-8-image-20190802112544/02-mercedes-benz-museum-cars-coffe-culture-2019-2560x1440.jpeg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #808080;
+    padding: 100px 0;
+    width: 100%;
+    text-align: center;
+    color: #1E90FF;
+}
+
+#news h2{
+    font-size: 4em;
+}
+
+#news h4{
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
+
+#news .img{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+#news .img:nth-child(odd){
+    margin-left: 18%;
+}
+
+#news img{
+    background: #fafafa;
+    padding: 5px;
+    border: 2px solid silver;
+    float: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+#news a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#news span{
+    float: left;
+    width: 100%;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+#form_input{
+    margin-top: 15px;
+    width: 35%;
+    margin-left: 38%;
+    font-size: 1.1em;
+}
+
+#form_input label{
+    color: #505050;
+    cursor: pointer;
+    font-size: 1.4em;
+}
+
+#form_input label > span{
+    color: #e87e7e;
+}
+
+#form_input input, #form_input textarea{
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 10px 2%;
+    border-radius: 7px;
+    border: 2px solid silver;
+    font-size: 0.9em;
+    color: #4a4a4a;
+}
+
+#form_input input:focus, #form_input textarea:focus{
+    border-color: #333;
+}
+
+.btn{
+    float: left;
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color: #ec6550;
+    text-shadow: #454545 0 0 2px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn:hover{
+    background-color: #c15443;
+}
+
+#main2{
+    padding: 100px 20%;
+    width: 60%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size: 1.3em;
+}
+
+#main2 div{
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#main2 h2{
+    font-size: 3em;
+}
+
+#main2 span{
+    color: #a0a0a0;
+}
+
+/* Register part */
+
+#top_register{
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(https://www.mercedes-benz.com/en/design/vehicles/_jcr_content/root/slider_0/sliderchilditems/slideritem_0/image/MQ7-0-image-20190523155835/01-mercedes-benz-design-cls-coupe-c-257-sketch-3400x1440.jpeg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    color: #fff;
+    font-size: 30px;
+}
+
+#top_login{
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(https://www.mercedes-benz.com/en/design/vehicles/_jcr_content/root/slider_0/sliderchilditems/slideritem_0/image/MQ7-0-image-20190523155835/01-mercedes-benz-design-cls-coupe-c-257-sketch-3400x1440.jpeg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    color: #fff;
+    font-size: 30px;
+}
+
+form{
+   border: 3px solid #C0C0C0;
+   padding: 8px 20px;
+   margin-bottom: 35px;
+}
+/*
+
+#search_engine{
+    margin-top: 40px;
+    width: 30%;
+    margin-left: 38%;
+    font-size: 1.1em;
+}
+
+#search_engine input{
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 10px 2%;
+    border-radius: 7px;
+    font-size: 0.9em;
+    color: #4a4a4a;
+}
+*/
+
+#l_r{
+    padding: 100px 20%;
+    width: 60%;
+    float: left;
+    background-color: #808080;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size: 1.3em;
+}
+
+#search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.body1{
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  box-sizing: border-box;
+}
+
+.testimonial-section{
+  background:#060509;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.inner-width{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.testimonial-section h1{
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+    color: #565656;
+    margin-top: 10px;
+}
+
+
+.testimonial-pics{
+  padding: 40px 0;
+}
+
+.testimonial-pics img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 20px;
+  filter: grayscale(100%);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.testimonial-pics img:hover, .testimonial-pics img.active{
+  filter: none;
+}
+
+
+.testimonial-contents{
+  max-width: 600px;
+  margin: auto;
+}
+
+.testimonial{
+  display: none;
+}
+
+.testimonial.active{
+  display: block;
+}
+
+.testimonial p{
+  color: #565656;
+  margin-bottom: 20px;
+}
+
+.testimonial .description{
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 15px;
+    color: #7c7c7c;
+}
+.body2{
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+.galleryContainer{
+    width: 100%;
+    height: 700px;
+    max-width: 2000px;
+    margin: auto;
+    user-select: none;
+    box-shadow: 0px 0px 3px 1px #00000078;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.galleryContainer .slideShowContainer{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    background-color: gainsboro;
+    position: relative;
+}
+.galleryContainer .slideShowContainer #playPause{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+   background-image: url("/static/img/play.png");
+    background-repeat: no-repeat;
+    z-index: 5;
+    background-size: cover;
+    margin: 5px;
+    cursor: pointer;
+}
+.galleryContainer .slideShowContainer #playPause:hover{
+    opacity: .7;
+}
+.galleryContainer .slideShowContainer .imageHolder{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.galleryContainer .slideShowContainer .imageHolder img{
+    width: 100%;
+    height: 100%;
+}
+.galleryContainer .slideShowContainer .imageHolder .captionText{
+    display: none;
+}
+
+.galleryContainer .slideShowContainer .leftArrow,.galleryContainer .slideShowContainer .rightArrow{
+    width: 50px;
+    background: #00000036;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: background 0.5s;
+    height: 72px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.galleryContainer .slideShowContainer .rightArrow{
+    left: auto;
+    right: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.galleryContainer .slideShowContainer .leftArrow:hover,.galleryContainer .slideShowContainer .rightArrow:hover{
+    background: #000000a8;
+    cursor: pointer;
+}
+.galleryContainer .arrow{
+    display: inline-block;
+    border: 3px solid white;
+    width: 10px;
+    height: 10px;
+    border-left: none;
+    border-bottom: none;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.galleryContainer .arrow.arrowLeft{
+    transform: rotateZ(-135deg);
+}
+.galleryContainer .arrow.arrowRight{
+    transform: rotateZ(45deg);
+}
+
+
+.galleryContainer .slideShowContainer>.captionTextHolder{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    background: #00000047;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+.galleryContainer .slideShowContainer>.captionTextHolder>.captionText{
+    cursor: pointer;
+    margin: 0;
+}
+
+.galleryContainer #dotsContainer{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.galleryContainer #dotsContainer .dots{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: #bbb;
+    cursor: pointer;
+    transition:background-color 0.5s;
+}
+.galleryContainer #dotsContainer .dots:first-child{
+    margin-left: 0;
+}
+.galleryContainer #dotsContainer .dots:hover,.galleryContainer #dotsContainer .dots.active{
+    background-color: #717171;;
+}
+
+.galleryContainer .moveLeftCurrentSlide{
+    animation-name: moveLeftCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+
+}
+.galleryContainer .moveLeftNextSlide{
+    animation-name: moveLeftNext;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveLeftCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: -100%;opacity: 1;}
+}
+@keyframes moveLeftNext {
+    from {margin-left: 100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+}
+
+
+.galleryContainer .moveRightCurrentSlide{
+    animation-name: moveRightCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+.galleryContainer .moveRightPrevSlide{
+    animation-name: moveRightPrev;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveRightCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: 100%;opacity: 1;}
+}
+@keyframes moveRightPrev {
+    from {margin-left: -100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+}
+.slideTextFromBottom {
+    animation-name: slideTextFromBottom;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+@keyframes slideTextFromBottom {
+    from {opacity: 0;margin-top: 100px}
+    to {opacity: 1;margin-top: 0px;}
+}
+.slideTextFromTop {
+    animation-name: slideTextFromTop;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+@keyframes slideTextFromTop {
+    from {opacity: 0;margin-top: -100px}
+    to {opacity: 1;margin-top: 0px;}
+}
+.body4{
+  margin: 0;
+  padding: 0;
+}
+
+.middle{
+  position: absolute;
+  top: 10%;
+  right: -1%;
+  transform: translate(-50%,-50%);
+}
+
+.sm-container{
+  text-align: center;
+}
+
+.sm-container i{
+  color: #FFFFFF;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+    opacity: 0.8;
+}
+
+.sm-container i:hover{
+  transform: scale(1.2);
+}
+
+.sm-menu{
+  background: #060609;
+  position: absolute;
+  border-radius: 8px;
+  display: none;
+    opacity: 0.8;
+}
+
+.sm-menu::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #060609;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+    opacity: 0.8;
+}

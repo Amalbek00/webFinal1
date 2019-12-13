@@ -1,0 +1,54 @@
+{% extends 'index.html' %}
+
+{% block content %}
+{% load staticfiles %}
+<html>
+    <head>
+        <title>CarStore</title>
+        {% load staticfiles %}
+        <link rel = "stylesheet" href = "{% static 'css/style.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+    </head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>Mercedes</span>
+        </div>
+        <div id="about">
+            <a href="{% url 'home' %}" >Main Page</a>
+            <a href="#" title="FAQ" onclick="slowScroll('#faq')">FAQ</a>
+            <a href="{% url 'login_url' %}" >Login</a>
+        </div>
+    </header>
+    <div id="top">
+        <div id="top_register">
+            <h1> Create New Account</h1>
+            <form method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button> Register </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function(){
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+</body>
+</html>
+{% endblock %}
